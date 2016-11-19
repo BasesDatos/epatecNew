@@ -1,0 +1,49 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" align="center">
+        <img  id="img_logo" src="http://vidriosemmanuel.com.mx/SIVEM/views/layout/default/img/categorias.png" />
+          <br><br>
+        <div class="container-fluid">
+          <form>
+            <div class="row">
+                <input class="form-control" type="text" placeholder="Descripcion" id="name" name ="name" ng-model="name" required>
+            </div>
+
+            <div class="row">
+                <select class="form-control" ng-model="sucursal" ng-options="s as s.name for s in sucursales track by s.name" >
+                    <option value="">--Elige una sucursal--</option>
+                </select>
+            </div>
+            <div class="row">
+                <select class="form-control" ng-model="sucursal" ng-options="s as s.name for s in sucursales track by s.name" >
+                    <option value="">--Elige un provedor--</option>
+                </select>
+            </div>
+            <div class="row">
+                <select class="form-control" ng-model="sucursal" ng-options="s as s.name for s in sucursales track by s.name" >
+                    <option value="">--Elige una categoria--</option>
+                </select>
+            </div>
+            <div class="row">
+                <select class="form-control" ng-model="sucursal" ng-options="s as s.name for s in sucursales track by s.name" >
+                    <option value="">--Exento--</option>
+                </select>
+            </div>
+              <div class="row">
+                  <input class="form-control" type="number" id="cant"              name="cant" placeholder="Cantidad" ng-model="cant" required>
+              </div >
+              <div class="row">
+                  <input class="form-control" type="number" id="cant"              name="cant" placeholder="Cantidad" ng-model="cant" required>
+              </div>
+        
+            <div class="col-xs-12">.</div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar Producto</button>
+              <br>
+            <div class="row" align="left">
+              <a href="#verCategoria">Ver Productos</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

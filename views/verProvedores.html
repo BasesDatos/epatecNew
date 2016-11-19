@@ -1,0 +1,46 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" align="center">
+        <img  id="img_logo" src="https://www.fiscoclic.mx/Resources/imgs/iconos/proveedores.png" />
+        <div class="container-fluid">
+            <div class="row" align="left">
+                <input type="text" placeholder="Buscar" ng-model="search" >
+            </div>
+            <br>
+           <div class="row">
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <h4>
+                           Provedores
+                       </h4>
+                   </div>
+                   <table class="table table-fixed ">
+                       <thead>
+                           <tr>
+                               <th class="col-xs-2">ID</th>
+                               <th class="col-xs-5">Name</th>
+                               <th class="col-xs-4">Address</th>
+                               <th class="col-xs-1">Borrar</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr ng-repeat="data in provedores | filter:search">
+                               <td class="col-xs-2">{{data.id}}</td>
+                               <td class="col-xs-5">{{data.name}}</td>
+                               <td class="col-xs-4">{{data.address}}</td>
+                               <td class="col-xs-1"> 
+                                   <span class="glyphicon glyphicon-trash"></span>
+                               </td>
+                           </tr>
+                       </tbody>
+                   </table>
+                   <br>
+               </div>
+               <div align="left">
+                   <a href="#provedor">Ingresa Nuevo Provedor</a>
+               </div>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

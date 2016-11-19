@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-xs-5">
+        <h4>BUSCAR: <input type="text" placeholder="Buscar Producto" ng-model="search" ></h4>
+        
+    </div>
+</div>
+<div style="width: 1200px; height: 450px; overflow-y: scroll;">
+    <div ng-repeat="prod in productos | filter:search" >
+        <div class="col-xs-3" >
+            <div class="modal-dialog" id="mdialTamanio">
+                <div class="modal-content">
+                    <div class="modal-header" align="center">
+                        <div class="container-fluid">
+                            <H4>{{prod._nombre}}</H4>
+                            <div class="row">
+                                <img src="../resource/palo.png">
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <a data-toggle="modal" data-target="#cantidadProducto" ng-click="selecProduct(prod._nombre,prod._id,prod._descripcion,prod._cantDisponible,prod._precio)">
+                                        ADD<span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 
+                                    </a>
+                                </div>
+                                <div class="col-xs-7">
+                                    <a href="#administracion">
+                                        BUY<span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <a ng-click="registrarPedido()" class="btn btn-success btn-lg btn-block">Realizar Pedido</a>
+
+    
+</div>
+    

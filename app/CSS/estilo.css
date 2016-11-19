@@ -1,0 +1,44 @@
+    
+            .jumbotron{position: relative;padding:0 !important;margin-top:10px !important;background: #eee;margin-top: 23px;text-align:center;text-decoration-line: underline;margin-bottom: 0 !important;}
+            
+            .nav.nav{text-align:left;margin-right: auto;}
+            
+            #cantidadText{margin-left: 140px;margin-right: 150px;}
+            
+            .row{color: #5a5a5a;}
+            
+            #colepa-123{color: #5a5890;}
+            
+            #b1{background: #3d3d3d;text-align: left;text-decoration-color: aqua;}
+            
+            #cont0 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont1 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont2 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont3 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont4 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont5 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont6 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont7 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont8 {padding-top:50px;color: #535252; background-color: #ececec;}
+            #cont9 {padding-top:50px;color: #535252; background-color: #ececec;}
+            
+            #id_Contact {background: #222222;color: aliceblue;}
+            #b2 {margin-top: 56px;margin-bottom: 45px;}
+            .flotante {display:scroll;position:fixed;bottom:220px;right:0px;}
+            
+            .table-fixed thead {
+              width: 97%;
+            }
+            .table-fixed tbody {
+              height: 230px;
+              overflow-y: auto;
+              width: 100%;
+            }
+            .table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+              display: block;
+            }
+            .table-fixed tbody td, .table-fixed thead > tr> th {
+              float: left;
+              border-bottom-width: 0;
+            }
+  

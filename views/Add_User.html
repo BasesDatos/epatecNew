@@ -1,0 +1,64 @@
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" align="center">
+        <img class="img-circle" id="img_logo" src="https://lh6.googleusercontent.com/-w8N1cF25Qe8/AAAAAAAAAAI/AAAAAAAAMzk/oeCTIYO_9PM/photo.jpg" />
+        <div class="container-fluid">
+          <form>
+            <div class="row">
+              <input class="form-control" id="Name" name="Name" placeholder="Name" type="text" required="" ng-model="name">
+            </div>
+
+            <div class="row">
+              <input class="form-control" id="Last_Name" name="Last_Name" placeholder="Frits Last Name" type="text" required="" ng-model="lastN1">
+            </div>
+              
+              <div class="row">
+              <input class="form-control" id="Last_Name" name="Last_Name" placeholder="Second Last Name" type="text" required="" ng-model="lastN2">
+            </div>
+
+            <div class="row">
+              <input class="form-control" id="ID" name="ID" placeholder="ID" type="number" required="" ng-model="uId">
+            </div>
+
+            <div class="row">
+              <input class="form-control" id="Telephone" name="Telephone" placeholder="Telephone" type="number" required="" ng-model="tel">
+            </div>
+              
+              <div class="row">
+              <input class="form-control" id="date" name="date" placeholder="Fecha de Nacimiento" type="date" required="" ng-model="date">
+            </div>
+
+            <div class="row">
+              <input class="form-control" id="Address" name="Address" placeholder="Provincia" type="text" required="" ng-model="provincia">
+            </div>
+              
+              <div class="row">
+              <input class="form-control" id="Address" name="Address" placeholder="Cantón" type="text" required="" ng-model="canton">
+            </div>
+              
+              <div class="row">
+              <input class="form-control" id="Address" name="Address" placeholder="Distrito" type="text" required="" ng-model="distrito">
+            </div>
+
+            <div class="row">
+              <input type="text" class="form-control" id="user" name="user" placeholder="Usuario" required="" ng-model="usuario">
+            </div>
+
+            <div class="row">
+              <input class="form-control" id="Password" name="Password" placeholder="Password" type="password" required="" ng-model="password">
+            </div>
+            <div class="row">
+                <select class="form-control" ng-model="ind" ng-options="s as s._tipo for s in lroles track by s._id" >
+                    <option value="">--Elige una categoria--</option>
+                </select>
+            </div>
+            <div class="row">
+                <a type="submit" class="btn btn-primary btn-lg btn-block" ng-click="registrarU()">RegisterAlbin</a>
+            </div>
+              {{data}}
+              {{usuario}}
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

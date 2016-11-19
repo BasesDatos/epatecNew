@@ -1,0 +1,41 @@
+
+    <nav class = "navbar navbar-inverse" role = "navigation">
+       <div class = "navbar-header">
+           <a class = "navbar-brand" href = "#principal"><span class="glyphicon glyphicon-wrench"></span>  ConstruTEC</a>
+       </div>
+           
+       <div>
+           <ul class = "nav navbar-nav">
+               <li><a href = "#principal">Inicio</a></li>
+               <li><a href = "#pedido">Pedidos</a></li>
+               <li><a href = "#administracion">Administración</a></li>
+           </ul>
+           <ul class="nav navbar-nav navbar-right">
+               <li>
+                   <p class = "navbar-text">{{user}}</p>
+               </li>
+               
+                <li class = "dropdown">
+                    <a  class = "dropdown-toggle" data-toggle = "dropdown">
+                        Usuarios 
+                        <span class="glyphicon glyphicon-user"></span>
+                        <b class = "caret"></b>
+                    </a>
+                    <ul class = "dropdown-menu">
+                        <li>
+                            <a href = "#login">Login </a>
+                        </li>
+                        <li class = "divider"></li>
+                        <li><a href = "#addUser">Registrar</a></li>
+                        <li class = "divider"></li>
+                        <li><a href = "#userInfo">Cuenta</a></li>
+                    </ul>
+               </li>
+               <li>
+                   <a href = "#">Salir
+                       <span class="glyphicon glyphicon-off"></span>
+                   </a>
+               </li>
+           </ul>       
+       </div>
+    </nav>
